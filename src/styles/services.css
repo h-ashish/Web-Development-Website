@@ -1,0 +1,52 @@
+.services-container{
+	background-color: lightgrey;
+	height: 500px;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, auto);
+	align-items: center;
+	padding: 20px;
+}
+
+.services-small-container{
+	text-align: center;
+	width: 250px;
+	align-items: center;
+	margin: auto;
+}
+.services-small-container > i {
+	font-size: 1.5em;
+	padding: 10px;
+}
+.p-container > p{
+	font-size: 12px;
+	padding: 5px;
+}
+
+
+@media screen and (max-width: 960px) {
+  .services-small-container{
+	height: auto;
+	width: 100%;
+	padding: 10px;
+	align-items: center;
+}
+}
+
+@media screen and (max-width: 768px) {
+
+.services-container{
+	height: auto;
+	width: 100%;
+	grid-template-columns: repeat(2, auto);
+}
+
+.services-small-container > i {
+	font-size: 1em;
+	padding: 5px;
+}
+.p-container > p{
+	font-size: 10px;
+	padding: 5px;
+}
+}

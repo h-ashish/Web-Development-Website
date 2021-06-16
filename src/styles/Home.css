@@ -1,0 +1,65 @@
+.home-container {
+  background: url('../assets/background.jpg') ;
+  background-size: cover;
+  background-position: center center;
+  height: 100vh;
+  width: 100vw;
+  object-fit: contain;
+}
+
+.small-container {
+  /*border: 2px solid black;*/
+  height: 500px;
+  width: 500px;
+  margin-left: 800px;
+}
+
+.small-container > h1 {
+  font-size: 40px;
+  padding: 20px;
+  padding-top: 100px;
+}
+.small-container > p{
+  font-size: 20px;
+  padding: 20px;
+  padding-top: 10px;
+}
+.small-container > button{
+  background: #23E3C9;
+  margin-left: 20px;
+  padding: 20px;
+  color: white;
+  border: none;
+  font-weight: bold;
+}
+.contact-link{
+  text-decoration: none;
+  color: white;
+}
+@media screen and (max-width: 960px) {
+  .small-container > h1 {
+    font-size: 20px;
+    padding-top: 150px;
+    margin: auto;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .small-container{
+    height: auto;
+    width: auto;
+    margin: auto;
+    margin-top: 100px;
+    text-align: center;
+  }
+  .small-container > h1 {
+    font-size: 30px;
+    margin-top: -100px;
+  }
+
+  .small-container > p {
+    font-size: 15px;
+  }
+
+  
+}

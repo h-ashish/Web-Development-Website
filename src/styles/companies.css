@@ -1,0 +1,37 @@
+.companies-container{
+	height: 200px;
+	width: 100%;
+	display: inline-flex;
+	align-items: center;
+	justify-content: space-around;
+}
+.companies-container> img{
+	height: 100px;
+ 	width: 100px;
+ 	transition: all 1s;
+}
+
+.companies-container>img:hover{
+	transform: scale(1.1);
+}
+
+
+@media screen and (max-width: 960px) {
+.companies-container{
+  
+}
+}
+
+@media screen and (max-width: 768px) {
+.companies-container{
+	height: auto;
+	padding: 10px;
+}
+.companies-container >img{
+	align-items: center;
+	height: auto;
+ 	width: 	50px;
+ 	transition: all 1s;
+}
+
+}

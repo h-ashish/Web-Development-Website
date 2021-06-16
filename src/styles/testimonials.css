@@ -1,0 +1,146 @@
+.testimonials-container{
+  height: 100%;
+  background: #23E3C9;
+  padding: 100px 30px;
+  text-align: center;
+  color: #fff;
+}
+
+
+.testimonial-slider {
+   display: block;
+   width: 100%;
+   height: auto;
+   margin-top: 100px;
+}
+
+.testimonial-slider ul.slider {
+   display: block;
+   list-style: none;
+   padding: 0;
+   position: relative;
+   display: inline-block;
+   width: 100%;
+   height: 350px;
+   overflow: hidden;
+   margin: 0 auto;
+}
+
+.testimonial-slider ul.slider li {
+    position: absolute;
+    display: block;
+    width: 100%;
+    opacity: 0;
+    margin: 0 auto;
+}
+.testimonial-slider ul.slider li:nth-child(1) {
+    opacity: 1;
+
+    -webkit-animation: fade-animation-1 20s infinite;
+            animation: fade-animation-1 20s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(2) {
+    -webkit-animation: fade-animation-2 20s infinite;
+            animation: fade-animation-2 20s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(3) {
+    -webkit-animation: fade-animation-3 20s infinite;
+            animation: fade-animation-3 20s infinite;
+}
+.testimonial-slider ul.slider li:nth-child(4) {
+    -webkit-animation: fade-animation-4 20s infinite;
+            animation: fade-animation-4 20s infinite;
+}
+
+.testimonial-slider q {
+   display: inline-block;
+   font: normal 500 30px / 1.25 "Raleway", Helvetica, Arial, Verdana, sans-serif;
+   letter-spacing: .5pt;
+   text-shadow: 0 5px 10px rgba(0,0,0,.1);
+   max-width: 35ch;
+}
+
+.testimonial-slider .source {
+    margin-top: 25px;
+    color: #d9e0f9;
+    font: italic 400 30px / 1.35 "Raleway", Helvetica, Arial, Verdana, sans-serif;
+}
+
+/* KEYFRAME DECLARATIONS */
+@keyframes fade-animation-1 {
+    0%, 25%, 100% {
+        opacity:0
+    }
+    3%, 22% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-2 {
+    0%, 25%, 50%, 100% {
+        opacity:0
+    }
+    28%, 47% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-3 {
+    0%, 50%, 75%, 100% {
+        opacity:0
+    }
+    53%, 72% {
+        opacity: 1;
+    }
+}
+@keyframes fade-animation-4 {
+    0%, 75%, 100% {
+        opacity:0
+    }
+    78%, 97% {
+        opacity: 1;
+    }
+}
+
+@-webkit-keyframes fade-animation-1 {
+    0%, 25%, 100% {
+        opacity:0
+    }
+    3%, 22% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-2 {
+    0%, 25%, 50%, 100% {
+        opacity:0
+    }
+    28%, 47% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-3 {
+    0%, 50%, 75%, 100% {
+        opacity:0
+    }
+    53%, 72% {
+        opacity: 1;
+    }
+}
+@-webkit-keyframes fade-animation-4 {
+    0%, 75%, 100% {
+        opacity:0
+    }
+    78%, 97% {
+        opacity: 1;
+    }
+}
+@media screen and (max-width: 768px) {
+
+/*.testimonials-container{
+  padding: 20px;
+}*/
+.testimonial-slider q {
+   font: normal 200 20px / 1.25 "Raleway", Helvetica, Arial, Verdana, sans-serif;
+}
+.testimonial-slider .source {
+    font: italic 200 30px / 1.35 "Raleway", Helvetica, Arial, Verdana, sans-serif;
+}
+}
